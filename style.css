@@ -1,8 +1,27 @@
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas {
-    display: block;
-  }
-  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1,
+h3 {
+  color: whitesmoke;
+  z-index: 1;
+  margin: 0;
+}
+h1 {
+  font-size: 20vmin;
+}
