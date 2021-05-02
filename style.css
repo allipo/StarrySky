@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap");
 html,
 body {
   margin: 0;
@@ -5,10 +6,8 @@ body {
   height: 100vh;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
 }
 canvas {
   display: block;
@@ -16,12 +15,30 @@ canvas {
   top: 0;
   left: 0;
 }
-h1,
-h3 {
+
+#logotype {
   color: whitesmoke;
   z-index: 1;
+  animation: disappear 10s ease 2s forwards;
+}
+h1,
+h3 {
   margin: 0;
 }
 h1 {
   font-size: 20vmin;
+  font-family: "Raleway Dots", cursive;
+  font-weight: 100;
+}
+h3 {
+  font-size: 2.5vmin;
+  font-family: "Raleway Dots", cursive;
+  font-weight: 100;
+  margin-top: -20px;
+}
+
+@keyframes disappear {
+  100%{
+    opacity: 0
+  }
 }
